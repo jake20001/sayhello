@@ -45,3 +45,8 @@ def forge(count):
 
     db.session.commit()
     click.echo('Created %d fake messages.' % count)
+
+
+if __name__ == '__main__':
+    print(app.instance_path)
+    app.run(host='0.0.0.0', port=8000, debug=True)
